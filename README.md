@@ -43,8 +43,10 @@ where
     ведомости."ДАТА" < '1998-01-05'::timestamp;
 ```
 
+![](resources/queries/sql/query-1-sql.png)
+
 ### Результат выполнения запроса
-![](./resources/query-results/query-result-1.png)
+![](resources/queries/results/query-1-result.png)
 
 ### Комментарий к результату запроса
 Дата в задании указана таким образом, что требуется найти дни, дата которых одновременно больше большей даты по 
@@ -89,8 +91,10 @@ where
     обучения."ЧЛВК_ИД" < 105590;
 ```
 
+![](resources/queries/sql/query-2-sql.png)
+
 ### Результат выполнения запроса
-![](./resources/query-results/query-result-2.png)
+![](resources/queries/results/query-2-result.png)
 
 ### Комментарий к результату запроса
 Видимо, Николаев с таким айдишником нет.
@@ -114,8 +118,10 @@ with уникальные_отчества as (
 select count(*) from уникальные_отчества;
 ```
 
+![](resources/queries/sql/query-3-sql.png)
+
 ### Результат выполнения запроса
-![](./resources/query-results/query-result-3.png)
+![](resources/queries/results/query-3-result.png)
 
 ### Комментарий к результату запроса
 Вместо исопльзования `DISTINCT` можно сделать следующее:
@@ -168,8 +174,10 @@ from группа_ученики
 where группа_ученики.количество_учеников = 5;
 ```
 
+![](resources/queries/sql/query-4-sql.png)
+
 ### Результат выполнения запроса
-![](./resources/query-results/query-result-4.png)
+![](resources/queries/results/query-4-result.png)
 
 ### Комментарий к результату запроса
 
@@ -241,8 +249,10 @@ where
 group by "ИД", "ФАМИЛИЯ", "ИМЯ", "ОТЧЕСТВО";
 ```
 
+![](resources/queries/sql/query-5-sql.png)
+
 ### Результат выполнения запроса
-![](./resources/query-results/query-result-5.png)
+![](resources/queries/results/query-5-result.png)
 
 ### Комментарий к результату запроса
 
@@ -293,8 +303,10 @@ where
     специальности."КОД_НАПРСПЕЦ" = '230101';
 ```
 
+![](resources/queries/sql/query-6-sql.png)
+
 ### Результат выполнения запроса
-![](./resources/query-results/query-result-6.png)
+![](resources/queries/results/query-6-result.png)
 
 ### Комментарий к результату запроса
 
@@ -343,15 +355,19 @@ where
 group by "ИД", "ФАМИЛИЯ", "ИМЯ", "ОТЧЕСТВО";
 ```
 
+![](resources/queries/sql/query-7-sql.png)
+
 ### Результат выполнения запроса
-![](./resources/query-results/query-result-7.png)
+![](resources/queries/results/query-7-result.png)
 
 ### Комментарий к результату запроса
 
 В выводе команды видно, что средняя оценка у учеников - тройка ( 2.5 <= оценка < 3.5).
 
+<br>
+
 ---
----
+
 
 # Вывод
 
